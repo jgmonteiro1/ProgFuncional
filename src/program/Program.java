@@ -24,7 +24,7 @@ public class Program {
 		
 		ProductService p2 = new ProductService();
 		
-		double sum = p2.filtredSum(list);
+		double sum = p2.filtredSum(list, p -> p.getName().charAt(0)=='T');
 		
 		System.out.println("A soma é: "+String.format("%.2f", sum));
 	}
